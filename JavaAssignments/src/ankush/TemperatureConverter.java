@@ -4,7 +4,7 @@ public class TemperatureConverter {
 	
 	static void temperature(float temperature)
 	{
-		System.out.println("Temperature Converted from Fahrenheit to Celsius : " +((temperature-32)*5)/9);
+		System.out.println(temperature+" Temperature Converted from Fahrenheit to Celsius : " +((temperature-32)*5)/9);
 	}
 	
 	public static void main(String[] args) {
