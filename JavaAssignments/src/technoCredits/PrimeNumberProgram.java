@@ -3,7 +3,7 @@ package technoCredits;
  * @author HarshVegada
  *
  */
-public class PrimeNumber {
+public class PrimeNumberProgram {
 	static int cnt;
 	static int start;
 	static int end;
