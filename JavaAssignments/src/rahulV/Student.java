@@ -13,7 +13,6 @@ public class Student {
 		int marks = Integer.parseInt(args[2]);
 		// s1.display("Rahul",1,100);
 		s1.display(name, rollNo, marks);
-
+		
 	}
-
 }
