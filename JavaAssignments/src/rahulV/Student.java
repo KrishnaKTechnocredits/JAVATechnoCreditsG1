@@ -5,7 +5,7 @@ public class Student {
 	void display(String name, int rNo, int marks) {  //display name , roll no, marks
 		System.out.println("Name: " + name + "  Roll no:" + rNo + " and Marks: " + marks);
 	}
-// Changes made here
+// Changes made
 	public static void main(String[] args) {
 		Student s1 = new Student();
 		String name = args[0];
