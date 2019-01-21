@@ -8,7 +8,7 @@ public class ConvertTemp {
 
 	public static void main(String[] args) {
 		ConvertTemp ct = new ConvertTemp();
-		float convertedTemp = ct.convertTemp(12.5f);
+		float convertedTemp = ct.convertTemp(12);
 		System.out.println("Converted Tempture in Celsius is " + convertedTemp);
 
 	}
