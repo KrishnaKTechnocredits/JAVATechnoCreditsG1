@@ -3,14 +3,14 @@ package rahulV;
 public class SquareAndCube {
 	
 
-	int square(int num) {  //method for square of number
+	int square(int num) {  //method to calculate square of number
 
-		return num * num;
+		return num * num;  //return square of number
 	}
 	
-	int cube(int num) {    //method for cube of number
+	int cube(int num) {    //method to calculate cube of number
 
-		return num*num*num;
+		return num*num*num;  //return cube of number
 	}
 
 
