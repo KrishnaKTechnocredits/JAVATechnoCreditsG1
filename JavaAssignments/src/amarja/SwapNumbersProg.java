@@ -6,7 +6,6 @@ public class SwapNumbersProg {
 		 SwapNumbersProg a = new SwapNumbersProg();
 		a.swapnumber(Integer.parseInt(args[0]),Integer.parseInt(args[1]));
 	}
-	
 	void swapnumber(int num1,int num2)
 	{
 		System.out.println("***Before Swapping***");
