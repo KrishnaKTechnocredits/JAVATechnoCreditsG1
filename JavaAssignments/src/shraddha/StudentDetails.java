@@ -6,10 +6,10 @@ package shraddha;
 
 public class StudentDetails {
 
-	static int roll_no, marks;
-	static String name;
+	int roll_no, marks;
+	String name;
 
-	//STUDENT DETAILS FUNCTION
+	// STUDENT DETAILS FUNCTION
 	void Student_Details(String studentname) {
 		if (studentname.equals("Shraddha") || studentname.equals("shraddha")) {
 			name = "Shraddha";
@@ -29,7 +29,7 @@ public class StudentDetails {
 
 	}
 
-	//DISPLAY NAME ROLL NO AND MARKS OF STUDENT
+	// DISPLAY NAME ROLL NO AND MARKS OF STUDENT
 	void display(String name1) {
 		Student_Details(name1);
 		System.out.println("Name of Student:= " + name + "\n" + "Roll No:" + roll_no + "\n" + "Marks: " + marks);
