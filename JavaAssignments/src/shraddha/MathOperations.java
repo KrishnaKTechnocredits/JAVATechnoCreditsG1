@@ -7,29 +7,29 @@ package shraddha;
 public class MathOperations {
 
 	// -----ADDITION OPERATION--------
-	int addition(int number_1, int number_2) {
-		int addition_result = number_1 + number_2;
+	double addition(double number_1, double number_2) {
+		double addition_result = number_1 + number_2;
 		return addition_result;
 
 	}
 
 	// -----SUBTRACTION OPERATION--------
-	int subtraction(int number_1, int number_2) {
-		int sub_result = number_1 - number_2;
+	double subtraction(double number_1, double number_2) {
+		double sub_result = number_1 - number_2;
 		return sub_result;
 
 	}
 
 	// -----MULTIPLICATION OPERATION--------
-	int multiplication(int number_1, int number_2) {
-		int mul_result = number_1 * number_2;
+	double multiplication(double number_1, double number_2) {
+		double mul_result = number_1 * number_2;
 		return mul_result;
 
 	}
 
 	// -----DIVISION OPERATION--------
-	int division(int number_1, int number_2) {
-		int div_result = 0;
+	double division(double number_1, double number_2) {
+		double div_result = 0;
 		if (number_2 != 0) {
 			div_result = number_1 / number_2;
 		}
@@ -39,7 +39,7 @@ public class MathOperations {
 	}
 
 	// -----DISPLAY RESULTS--------
-	void display(int num_1, int num_2) {
+	void display(double num_1, double num_2) {
 		System.out.println("Addition Result: " + addition(num_1, num_2));
 		System.out.println("Subtraction Result: " + subtraction(num_1, num_2));
 		System.out.println("Multiplication Result: " + multiplication(num_1, num_2));
@@ -49,9 +49,10 @@ public class MathOperations {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//Changes done to double
 
 		MathOperations mo = new MathOperations();
-		mo.display((Integer.parseInt(args[0])), (Integer.parseInt(args[1])));
+		mo.display((Double.parseDouble(args[0])), (Double.parseDouble(args[1])));
 
 	}
 
