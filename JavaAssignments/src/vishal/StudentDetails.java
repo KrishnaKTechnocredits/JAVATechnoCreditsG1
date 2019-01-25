@@ -1,16 +1,11 @@
 package vishal;
 
 public class StudentDetails {
-	void printName(String name) {
+	void printData(String name, int rollNo, int marks) {
 		System.out.println("Student Name is " + name);
-	}
-
-	void printRollNo(int rollNo) {
-		System.out.println("Student Roll No. is " + rollNo);
-	}
-
-	void printMarks(int marks) {
+		System.out.println("Student Roll no is " + rollNo);
 		System.out.println("Student Marks are " + marks);
+
 	}
 
 	public static void main(String[] args) {
@@ -19,9 +14,7 @@ public class StudentDetails {
 		int marks = Integer.parseInt(args[2]);
 
 		StudentDetails sd = new StudentDetails();
-		sd.printName(stuName);
-		sd.printRollNo(stuRollNo);
-		sd.printMarks(marks);
+		sd.printData(stuName, stuRollNo, marks);
 	}
 
 }
