@@ -49,6 +49,7 @@ public class MathOperations {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//Changes done to double
 
 		MathOperations mo = new MathOperations();
 		mo.display((Double.parseDouble(args[0])), (Double.parseDouble(args[1])));
