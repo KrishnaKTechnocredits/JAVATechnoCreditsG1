@@ -8,7 +8,11 @@ public class SimpleInterest {
 
 	public static void main(String[] args) {
 		SimpleInterest si = new SimpleInterest();
-		float simpleInt = si.simpleInterest(500, 5, 12.5f);
+		int enterAmt = Integer.parseInt(args[0]);
+		int enterYear = Integer.parseInt(args[1]);
+		float enterRate = Float.parseFloat(args[2]);
+
+		float simpleInt = si.simpleInterest(enterAmt, enterYear, enterRate);
 		System.out.println("Simple Interest is " + simpleInt);
 
 	}
