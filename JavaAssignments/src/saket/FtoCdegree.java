@@ -1,21 +1,23 @@
 package saket;
 
 public class FtoCdegree {
-	int Fahrenheit = 20;
-	int celcius;
 
-	void formula() {
+	
+	double formula(double Fahrenheit ) {
 
-		celcius = (Fahrenheit - 32) * 5 / 9;
-		System.out.println("Conversion of Fahrenheit " + Fahrenheit + "into Celcius is" + celcius);
-
+		double celcius = (Fahrenheit - 32) * 5 / 9;
+		
+		return celcius;
+		
 	}
 
 	public static void main(String[] args) {
 
 		FtoCdegree A = new FtoCdegree();
 
-		A.formula();
+		double convertion=A.formula(25);
+		
+		System.out.println("Conversion of Fahrenheit "  + "into Celcius is" + convertion);
 
 	}
 
