@@ -2,27 +2,25 @@ package saket;
 
 public class SquareandCube {
 
-	int num = 2;
-	int square;
-	int cube;
+	int square(int length) {
 
-	void square() {
-
-		square = num * num;
-
+		int a = length * length;
+		return a;
 	}
 
-	void cube() {
-		cube = square * num;
+	int cube(int length) {
+
+		int b = length * length * length;
+		return b;
 
 	}
 
 	public static void main(String[] args) {
 		SquareandCube A = new SquareandCube();
-		A.square();
-		A.cube();
-		System.out.println("Square of the given number is " + A.square);
-		System.out.println("Cube of the given number is " + A.cube);
+		int square = A.square(5);
+		int cube = A.cube(5);
+		System.out.println("Square of the given number is " + square);
+		System.out.println("Cube of the given number is " + cube);
 	}
 
 }
