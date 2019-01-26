@@ -8,7 +8,7 @@ public class PrimenoSumProg {
 		System.out.println("User range provided is "+start+" to "+end);
 		System.out.println("The Prime numbers are : ");
 		for (int i = start; i <= end; i++) {
-			boolean flag = PrimeCheck(i);
+			boolean flag = primeCheck(i);
 			if (flag == true)
 			{
 				System.out.println(i);
@@ -17,7 +17,7 @@ public class PrimenoSumProg {
 					}
 			System.out.println("The sum of Prime numbers is " + sum);
 	}
-	static boolean PrimeCheck(int num) {
+	static boolean primeCheck(int num) {
 		boolean flag = true;
 		for (int i = 2; i <= num / 2; i++) {
 			if (num % i == 0) {
