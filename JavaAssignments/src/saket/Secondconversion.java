@@ -2,25 +2,24 @@ package saket;
 
 public class Secondconversion {
 
-	static int second = 360;
-	static int minutes;
-	static int hour;
+	int second;
+	int minutes;
+	int hour;
 
-	static void conversion() {
+	void conversion(int a) {
 
-		minutes = second / 60;
-		hour = second / 3600;
-		System.out.println(minutes);
-		System.out.println(hour);
-		System.out.println(second);
-
+		minutes = a / 60;// converts seconds to minutes
+		hour = a / 3600;// convert seconds to hour
+		second = (a % 60);// gives the remaining seconds after getting hour and
+							// minute
+		System.out.println(hour + "hours" + minutes + "minutes" + second + "seconds");
 	}
 
 	public static void main(String[] args) {
 
-		conversion();
+		Secondconversion A = new Secondconversion();
 
-
+		A.conversion(150);
 	}
 
 }
