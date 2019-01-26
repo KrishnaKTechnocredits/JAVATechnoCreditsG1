@@ -6,9 +6,9 @@ public class SimpleInterest
 
 	public static void main(String[] args) 
 	{
-		float P = (float) Double.parseDouble(args[0]);
-		float T = (float) Double.parseDouble(args[1]);
-		float R = (float) Double.parseDouble(args[2]);
+		float P = Float.parseFloat(args[0]);
+		float T = Float.parseFloat(args[1]);
+		float R = Float.parseFloat(args[2]);
 		SimpleInterest c = new SimpleInterest();
 		c.calculate(P, T, R);
 		c.displayInterest(P, T, R);
