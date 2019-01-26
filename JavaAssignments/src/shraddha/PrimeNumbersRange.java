@@ -6,27 +6,45 @@ package shraddha;
 
 public class PrimeNumbersRange {
 
-	void PrimeNumbers(int number1, int number2) {
-		int prime_sum = 0;
+	static int prime_sum = 0;
 
-		for (int i = number1; i <= number2; i++) {
-			for (int j = number1; j <= number2; j++) {
-				if (i != j && i % j == 0) {
-					// System.out.println("no. not prime" + i);
-					break;
-				} else if (i == j) {
-					// System.out.println("number is prime" + i);
-					prime_sum = prime_sum + i;
+	int PrimeNumbers(int number) {
+		boolean flag = false;
 
-				}
+		for (int i = 2; i <= number/2; i++) {
+			if (number%i == 0) {
+				flag = true;
+				System.out.println("Not Prime" + number);
+				break;
 			}
+
 		}
-		System.out.println("Sum Of Prime Nos:=" + prime_sum);
+
+		if (flag == false) {
+			System.out.println("Prime number" + number);
+			prime_sum = prime_sum + number;
+
+		}
+		
+		return prime_sum;
 	}
 
+	// Prime Nos Sum
+	void display(int prime_sum)
+	{
+		System.out.println(prime_sum);
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new PrimeNumbersRange().PrimeNumbers(Integer.parseInt(args[0]), Integer.parseInt(args[1]));
+		PrimeNumbersRange pm = new PrimeNumbersRange();
+		int i=0,prime_sum=0;
+		for (i = Integer.parseInt(args[0]); i <= Integer.parseInt(args[1]); i++) {
+			prime_sum = pm.PrimeNumbers(i);
+			
+		}
+		
+		pm.display(prime_sum);
 	}
 
 }
