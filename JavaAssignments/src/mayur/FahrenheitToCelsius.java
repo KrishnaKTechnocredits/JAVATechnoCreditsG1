@@ -7,7 +7,7 @@ public class FahrenheitToCelsius
 	public static void main(String[] args) 
 	{
 		FahrenheitToCelsius f = new FahrenheitToCelsius();
-		float fahrenheit = (float) (Double.parseDouble(args[0]));
+		float fahrenheit = Float.parseFloat(args[0]);
 		f.convertToCelsius(fahrenheit);
 		f.printResult(fahrenheit);
 	}
