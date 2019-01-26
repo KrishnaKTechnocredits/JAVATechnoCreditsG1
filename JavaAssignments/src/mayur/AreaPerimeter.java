@@ -3,8 +3,8 @@ package mayur;
 public class AreaPerimeter {
 	public static void main(String[] args) {
 		AreaPerimeter a = new AreaPerimeter();
-		float width = (float) Double.parseDouble(args[0]);
-		float hight = (float) Double.parseDouble(args[1]);
+		float width = Float.parseFloat(args[0]);
+		float hight = Float.parseFloat(args[0]);
 		a.PerimeterRectangle(width, hight);
 		a.AreaRectangle(width, hight);
 		float radius = (float) Double.parseDouble(args[2]);
