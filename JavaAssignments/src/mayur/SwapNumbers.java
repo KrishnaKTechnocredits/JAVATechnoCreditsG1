@@ -4,8 +4,8 @@ public class SwapNumbers {
 
 	public static void main(String args[]) 
 	{
-		float Num1 = (float) Double.parseDouble(args[0]);
-		float Num2 = (float) Double.parseDouble(args[1]);
+		float Num1 = Float.parseFloat(args[0]);
+		float Num2 = Float.parseFloat(args[1]);
 		SwapNumbers s = new SwapNumbers();
 		System.out.println("Numbers before swaping: Number1 =" + Num1 + " and Number2 =" + Num2);
 		s.swap(Num1, Num2);
