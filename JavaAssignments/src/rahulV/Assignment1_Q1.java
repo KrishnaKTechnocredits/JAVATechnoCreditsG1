@@ -1,32 +1,32 @@
 package rahulV;
 
-public class Assignment1_Q1 {
+public class Assignment1_Q1 {  
 
-	int sum(int num1, int num2) {
+	int sum(int num1, int num2) {   //method to calculate sum
 
 		// int sum = num1+num2;
 		return num1 + num2;
 	}
 
-	int sub(int num1, int num2) {
+	int sub(int num1, int num2) {   //method to calculate substraction
 
 		// int sub = num1-num2;
 		return num1 - num2;
 	}
 
-	int mul(int num1, int num2) {
+	int mul(int num1, int num2) {   //method to calculate multiplication
 
 		// int mul = num1*num2;
 		return num1 * num2;
 	}
 
-	int div(int num1, int num2) {
+	int div(int num1, int num2) {   //method to calculate division
 
 		//int div = num1 / num2;
 		return num1 / num2;
 	}
 
-	int rem(int num1, int num2) {
+	int rem(int num1, int num2) {   //method to calculate reminder
 
 		// int rem = num1%num2;
 		return num1 % num2;
