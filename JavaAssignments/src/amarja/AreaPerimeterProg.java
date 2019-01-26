@@ -5,10 +5,10 @@ public class AreaPerimeterProg {
 		AreaPerimeterProg a =new AreaPerimeterProg();
 		//Arguments to be passed as unit,length and breadth for Rectangle
 		//Arguments to be passed as unit,radius for circle
-		a.CalRectareaperimtr(args[0],Integer.parseInt(args[1]),Integer.parseInt(args[2]));
-		a.CalCircareaperimtr(args[3],Float.parseFloat(args[4]));
+		a.calRectareaperimtr(args[0],Integer.parseInt(args[1]),Integer.parseInt(args[2]));
+		a.calCircareaperimtr(args[3],Float.parseFloat(args[4]));
 		}
-	void CalRectareaperimtr(String unit,int length,int breadth)
+	void calRectareaperimtr(String unit,int length,int breadth)
 	{
 		int area;int perimtr;
 		area=length*breadth;
@@ -18,7 +18,7 @@ public class AreaPerimeterProg {
 		System.out.println("Area of Rectangle =" + area + "sq"+unit);
 		System.out.println("Perimeter of Rectangle =" + perimtr +unit);
 	}
-	void CalCircareaperimtr(String unit,float radius)
+	void calCircareaperimtr(String unit,float radius)
 	{
 		double area;double perimtr;
 		area=3.14*radius*radius;
