@@ -6,7 +6,7 @@ public class StudentInfo
 	{
 		int rNo = Integer.parseInt(args[0]);
 		String sName = args[1];
-		float marks = (float) Double.parseDouble(args[2]);//parse string to double
+		float marks = Float.parseFloat(args[2]);//parse string to double
 		StudentInfo s = new StudentInfo();
 		s.DisplayStudentInfo(rNo, sName, marks);
 	}
