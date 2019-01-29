@@ -7,7 +7,7 @@ public class CountVisibleObject {
 		DynamicInputArray ia=new DynamicInputArray();
 		int temp[]=ia.intArray();
 		int maxValue=temp[0];
-		for (int index=0;index<temp.length;index++)
+		for (int index=1;index<temp.length;index++)
 		{
 			if(maxValue<temp[index])
 			{
