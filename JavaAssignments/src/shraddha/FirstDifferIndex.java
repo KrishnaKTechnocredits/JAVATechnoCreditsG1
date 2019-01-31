@@ -1,13 +1,15 @@
 //--------------------------------------------------------------------------------------------------
-//Write a java program to check the equality of two arrays? 
-//Hint: Input Arrays : First Array : [21, 57, 11, 37, 24] Second Array : [21, 57, 11, 37, 24] Two Arrays Are Equal 
+//Assignment: Find first differ index from given arrays 
+//i/p :- arr1: {10,2,9,14,3} 
+//arr2: {10,2,18,14,3} 
+//o/p :-Values are not matching at index -> 2 
 //--------------------------------------------------------------------------------------------------
 
 package shraddha;
 
 import java.util.Scanner;
 
-public class EqualArray {
+public class FirstDifferIndex {
 
 	int[] acceptNumberSeries() {
 		Scanner sc = new Scanner(System.in);
@@ -22,28 +24,25 @@ public class EqualArray {
 		return number_series;
 	}
 
-	void equalArray(int[] array_1, int[] array_2) {
+	void differIndex(int[] array_1, int[] array_2) {
 		// TODO Auto-generated method stub
-
-		if (array_1.length == array_2.length) {
-			for (int index = 0; index <= array_1.length - 1; index++) {
-				if (array_1[index] != array_2[index]) {
-					break;
-				}
+		for (int index = 0; index <= array_1.length - 1; index++) {
+			if (array_1[index] != array_2[index]) {
+				System.out.println("Values are not matching at index -> " + index);
+				break;
 			}
-			System.out.println("Two Arrays Are Equal");
-		} else
-			System.out.println("Two Array are Not Equal");
+		}
+		System.out.println("Values are matching");
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		EqualArray e = new EqualArray();
+		FirstDifferIndex e = new FirstDifferIndex();
 		System.out.println("ARRAY 1:");
 		int[] array_1 = e.acceptNumberSeries();
 		System.out.println("ARRAY 2:");
 		int[] array_2 = e.acceptNumberSeries();
-		e.equalArray(array_1, array_2);
+		e.differIndex(array_1, array_2);
 	}
 
 }
