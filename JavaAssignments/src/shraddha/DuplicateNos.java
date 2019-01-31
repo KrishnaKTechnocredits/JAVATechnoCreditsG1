@@ -24,7 +24,6 @@ public class DuplicateNos {
 		}
 
 		return number_series;
-
 	}
 
 	// Solution 1: finding duplicates in and array
