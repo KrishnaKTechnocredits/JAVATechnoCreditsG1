@@ -1,3 +1,8 @@
+//---------------------------------------------------------------------------------------------------
+//Largest and smallest number in unsorted array? 
+//Hint: For example, if input integer array is {2, 6, 3, 9, 11} and given sum is 9, output should be {6,3}. 
+//---------------------------------------------------------------------------------------------------
+
 package shraddha;
 
 import java.util.Scanner;

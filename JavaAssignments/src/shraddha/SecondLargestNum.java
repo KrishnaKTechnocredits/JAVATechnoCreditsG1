@@ -1,3 +1,7 @@
+//---------------------------------------------------------------------------------------------------
+// Write a java program to find second largest element in an array of integers? 
+//---------------------------------------------------------------------------------------------------
+
 package shraddha;
 
 import java.util.Scanner;
