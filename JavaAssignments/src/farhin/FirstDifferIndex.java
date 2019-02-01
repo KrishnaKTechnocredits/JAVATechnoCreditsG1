@@ -2,9 +2,9 @@ package farhin;
 
 import java.util.Scanner;
 
-public class FindDifferIndex {
+public class FirstDifferIndex {
 	public static void main(String[] args) {
-		FindDifferIndex findIndex = new FindDifferIndex();
+		FirstDifferIndex findIndex = new FirstDifferIndex();
 
 		Scanner sc = new Scanner(System.in);
 		int[] firstArr = findIndex.takeInputs( "first", sc);
