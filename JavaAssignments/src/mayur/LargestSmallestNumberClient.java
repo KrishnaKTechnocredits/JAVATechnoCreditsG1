@@ -8,11 +8,11 @@ public class LargestSmallestNumberClient
 	{
 
 		UserInputArray userInputArray = new UserInputArray();
-		int[] arry = userInputArray.UserInput(); // calling UserInput()
+		int[] arry = userInputArray.userInput(); // calling UserInput()
 
 		LargestSmallestNumberService largestSmallestNumberService = new LargestSmallestNumberService();
-		int[] m = largestSmallestNumberService.LargestSmallest(arry);// calling LargestSmallest() to find smallest and largest number of array
-		System.out.println("Smallest number is " + m[0]);
-		System.out.println("Largest number is " + m[1]);
+		int[] result = largestSmallestNumberService.largestSmallest(arry);// calling LargestSmallest() to find smallest and largest number of array
+		System.out.println("Smallest number is " + result[0]);
+		System.out.println("Largest number is " + result[1]);
 	}
 }

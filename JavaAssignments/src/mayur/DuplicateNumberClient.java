@@ -7,8 +7,8 @@ public class DuplicateNumberClient
 	{
 		DuplicateNumberService dNumberService = new DuplicateNumberService();
 		UserInputArray userInputArray =new UserInputArray();
-		int[] arry = userInputArray.UserInput(); //calling UserInput()
-		int d = dNumberService.FindDuplicate(arry);//calling FindDuplicate()
-		System.out.println("Duplicate number is " + d);
+		int[] arry = userInputArray.userInput(); //calling UserInput()
+		int duplicate = dNumberService.findDuplicate(arry);//calling FindDuplicate()
+		System.out.println("Duplicate number is " + duplicate);
 	}
 }

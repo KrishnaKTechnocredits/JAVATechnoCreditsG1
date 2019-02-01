@@ -2,26 +2,26 @@
 package mayur;
 
 public class LargestSmallestNumberService {
-	int[] LargestSmallest(int[] arry)
+	int[] largestSmallest(int[] arry)
 	{
-		int Largest = 0;
-		int Smallest = arry[0];
+		int largest = 0;
+		int smallest = arry[0];
 
 		for (int index = 0; index < arry.length; index++) 
 		{
-			if (Smallest > arry[index]) 
+			if (smallest > arry[index]) 
 			{
-				Smallest = arry[index];
+				smallest = arry[index];
 			}
-			if (Largest < arry[index]) 
+			if (largest < arry[index]) 
 			{
-				Largest = arry[index];
+				largest = arry[index];
 			}
 		}
 
 		int[] temp = new int[2];
-		temp[0] = Smallest;
-		temp[1] = Largest;
+		temp[0] = smallest;
+		temp[1] = largest;
 		return temp;
 	}
 
