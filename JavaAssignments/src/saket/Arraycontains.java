@@ -3,8 +3,7 @@ package saket;
 import java.util.Scanner;
 
 public class Arraycontains {
-
-	boolean flag = false;
+	int temp = 0;
 
 	public static void main(String[] args) {
 
@@ -34,26 +33,26 @@ public class Arraycontains {
 
 	}
 
-	boolean numberpresent(int num, int[] a) {
+	void numberpresent(int num, int[] a) {
 
 		for (int i = 0; i < a.length; i++) {
 
 			if (a[i] == num) {
-				flag = true;
+				temp = 1;
 				// System.out.println(a[i]);
 				// System.out.println("Given number is Present in the given
 				// array");
 			}
 
 		}
-		return flag;
+
 	}
 
 	void display() {
-		if (flag == true) {
+		if (temp == 1) {
 			System.out.println("Given number is Present in the given array");
 		}
-		if (flag == false) {
+		if (temp == 0) {
 			System.out.println("Given number is not present in the given array");
 		}
 
