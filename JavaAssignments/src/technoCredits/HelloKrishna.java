@@ -2,8 +2,7 @@ package technoCredits;
 
 public class HelloKrishna {
 
-	
-	// Hi added a comment
+	// Adding comment
 	public static void main(String[] args) {
 		System.out.println("Hello Krishna !!");
 	}
