@@ -7,9 +7,9 @@ public class Treecount {
 	 	int temp=numtrees[0];
 	 		 for (int index=1;index<numtrees.length;index++)
 		 {
-				if (temp<numtrees[index])
-				 count++;
-				 temp =numtrees[index]; 
+				if (temp<numtrees[index])//Modified as per review comments to compare with temp only when  temp is less
+				{ count++;
+				 temp =numtrees[index];} 
 		 }
 		 return count;
 	 }
