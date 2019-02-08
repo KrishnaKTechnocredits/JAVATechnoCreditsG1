@@ -1,6 +1,6 @@
 package rahulV;
 
-public class Assignment3_Q15 {
+public class Assignment3_Q16 {
 
 	double area(double l) { // area of square
 
@@ -17,7 +17,7 @@ public class Assignment3_Q15 {
 
 	public static void main(String[] args) {
 
-		Assignment3_Q15 a = new Assignment3_Q15();
+		Assignment3_Q16 a = new Assignment3_Q16();
 
 		System.out.println("Area of circle: " + a.area(4.2f));
 		System.out.println("Area of rectangle: " + a.area(4.5));
