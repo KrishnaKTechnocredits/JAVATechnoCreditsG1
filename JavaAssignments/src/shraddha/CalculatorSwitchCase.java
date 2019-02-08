@@ -1,3 +1,7 @@
+//------------------------------------------------
+//Assignment: Calculator using Switch case.
+//------------------------------------------------
+
 package shraddha;
 
 import java.util.Scanner;
