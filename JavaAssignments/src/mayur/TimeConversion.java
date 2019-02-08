@@ -13,6 +13,8 @@ public class TimeConversion
 	{
 		int h = seconds / 3600; //Convert seconds to Hour
 		int m = ((seconds % 3600) / 60); //Convert Seconds to minute
+		
+		
 		int s = (seconds % 60); //Remaining Seconds
 		System.out.println(+seconds + "Seconds = " + h + "H:" + m + "M:" + s + "S");
 	}
