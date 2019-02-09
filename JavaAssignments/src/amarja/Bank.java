@@ -11,7 +11,7 @@ Create BankClient class to test functionalities of Bank class*/
 import java.util.Scanner;
 public class Bank {
 	int account_no;String name;double amount;
-	double depa;double wamount;double bal;
+	double depa;double wamount;static double bal;
 	//Constructor to initialize variables
 	Bank()
 	{
@@ -40,30 +40,30 @@ public class Bank {
 		System.out.println("Name saved = "+name);
 		System.out.println("Account no saved = "+account_no);
 		System.out.println("Amount saved = "+amount);
+		this.amount=amount;
+		this.bal=amount;
 	}
 	void deposit(double depa,double amount)
 	{
-		System.out.println("Amount deposited= "+depa);
-		amount=amount+depa;
-		System.out.println("Total Balance= "+amount);
+		this.bal=this.bal+depa;
+		System.out.println("Total Balance= "+this.bal);
 	}
-	void withdraw(double depa,double amount)
-	{
-		System.out.println("Amount withdrawn= "+ depa);
-		amount=amount-depa;
-		System.out.println("Total Balance= "+amount);
+	void withdraw(double depa,double bal)
+	{	
+		this.bal=this.bal-depa;
+		System.out.println("Total Balance= "+this.bal);
 		
 	}
 	void checkbalance(double amount)
 	{	
-		System.out.println("Available balance="+amount);
+		System.out.println("Available balance="+this.bal);
 	}
-	void displayDetails(String name,int account_no,double bal)
+	void displayDetails(String name,int account_no,double amount)
 	{
 		System.out.println("Details of Customer:");
 		System.out.println("Name="+ name);
 		System.out.println("Account no="+ account_no);
-		System.out.println("Available Balane="+ bal);
+		System.out.println("Available Balane="+ this.bal);
 	}
 	}
 

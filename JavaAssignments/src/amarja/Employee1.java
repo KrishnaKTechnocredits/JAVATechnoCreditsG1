@@ -19,6 +19,10 @@ public class Employee1 {
 	}
 	void compareEmpSalary(Employee1 e1, Employee1 e2)
 	{
+		 if  (e1.salary==e2.salary)
+			 System.out.println("Salary are equal for both employees");
+		 else
+		 {
 		if (e1.salary >e2.salary)
 		{
 			System.out.println("Details of Employee having maximum salary :");
@@ -32,8 +36,10 @@ public class Employee1 {
 			System.out.println("Department ID = "+ e2.deptId);
 			System.out.println("Employee Name = "+ e2.empName);
 			System.out.println("Salary = "+ e2.salary);			
-		}		
-	}	
+		}
+		 }
+			
+			}	
 	public static void main (String args[])
 	{
 		Employee1 e1 =new Employee1 (0,null,0.0);
