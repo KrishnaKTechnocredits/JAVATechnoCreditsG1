@@ -1,11 +1,11 @@
 package mayur;
 
 public class Circle {
-	static float radious;
+	private static float radious;
 
 	// created constructor to initialize value
-	Circle() {
-		radious = 10.0f;
+	public Circle(float radious2) {
+		radious = radious2;
 	}
 
 	void areaCircle() {

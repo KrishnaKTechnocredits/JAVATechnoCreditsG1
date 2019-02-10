@@ -9,8 +9,7 @@ public class LeapYearUsingTernaryOp
 {
 	boolean isLeapYearUsingTernaryOperator(int year) 
 	{
-		boolean result;
-		return result = ((year % 400 == 0) && (year % 4 == 0)) ? true : (year % 100 == 0) ? false : false;
+		return ((year % 400 == 0) && (year % 4 == 0)) ? true : (year % 100 == 0) ? false : false;
 	}
 
 	public static void main(String[] args) {
