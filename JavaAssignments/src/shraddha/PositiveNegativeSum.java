@@ -69,7 +69,5 @@ public class PositiveNegativeSum {
 
 		PositiveNegativeSum p = new PositiveNegativeSum();
 		p.positiveNegativeNos(p.ArrayInput());
-
 	}
-
 }
