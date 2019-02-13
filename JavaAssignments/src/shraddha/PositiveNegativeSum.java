@@ -38,7 +38,7 @@ public class PositiveNegativeSum {
 			}
 		}
 
-		positive_nos = positive_nos.substring(0, positive_nos.lastIndexOf(",")); // removing
+		positive_nos = positive_nos.substring(0, positive_nos.length()-1); // removing
 																					// last
 																					// comma
 		negative_nos = negative_nos.substring(0, negative_nos.lastIndexOf(","));

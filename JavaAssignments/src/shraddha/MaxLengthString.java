@@ -35,7 +35,7 @@ public class MaxLengthString {
 		String[] strings = new String[arraysize];
 		System.out.print("Please enter " + arraysize + " Strings:");
 		for (int index = 0; index < strings.length; index++) {
-			strings[index] = sc.next();
+			strings[index] = sc.nextLine();
 		}
 
 		return strings;
