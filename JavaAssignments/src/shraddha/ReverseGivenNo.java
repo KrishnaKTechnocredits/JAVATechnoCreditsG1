@@ -14,16 +14,14 @@ b. Output number :- 987654
 3. number = number/10; ---> 12, 1
  -----------------------------------------------------------------------------------**/
 
-
 package shraddha;
 
 import java.util.Scanner;
 
 public class ReverseGivenNo {
-	
-	void reverseNumberLOGIC_1(int number1)
-	{
-		String number = "" +number1;
+
+	void reverseNumberLOGIC_1(int number1) {
+		String number = "" + number1;
 		String reversestring = "";
 
 		for (int index = number.length() - 1; index >= 0; index--) {
@@ -32,18 +30,16 @@ public class ReverseGivenNo {
 
 		System.out.println("Reversed number is:" + reversestring);
 	}
-	
-	static void reverseNumberLOGIC_2(int number)
-	{
-		int mod =0, reverse =0;
-		while(number > 0)
-		{	reverse = reverse * 10;
-			reverse=reverse + number%10;
-	        number = number/10;
+
+	static void reverseNumberLOGIC_2(int number) {
+		int mod = 0, reverse = 0;
+		while (number > 0) {
+			reverse = reverse * 10;
+			reverse = reverse + number % 10;
+			number = number / 10;
 		}
-			System.out.println(reverse);
+		System.out.println(reverse);
 	}
-	
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
