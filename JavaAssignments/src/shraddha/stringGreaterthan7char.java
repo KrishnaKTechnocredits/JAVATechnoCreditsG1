@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------------------
-Assignmnet: WAP to find string which has length more than 7 characheter.
+Assignment: WAP to find string which has length more than 7 characheter.
 a. Input array ={“krishna”, “maulik”, “aakash”, “harsh”, “aakansha”,
 ”abhishek”}\
 b. Output :- Krishna, aakansha, abhishek
