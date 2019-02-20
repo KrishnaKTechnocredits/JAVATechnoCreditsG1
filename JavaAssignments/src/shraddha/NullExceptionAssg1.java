@@ -1,9 +1,14 @@
+/*-----------------------------------------------------------------------------------------------------------------
+Assignment: Define an object reference and initialize it to null. Try to call a method through this reference.
+Now wrap the code in a try-catch clause to catch the exception. 
+ *------------------------------------------------------------------------------------------------------------------*/
+
 package shraddha;
 
 public class NullExceptionAssg1 {
 
 	void method_1() {
-		System.out.println("Methhod_1");
+		System.out.println("Method_1");
 	}
 
 	public static void main(String[] args) {
