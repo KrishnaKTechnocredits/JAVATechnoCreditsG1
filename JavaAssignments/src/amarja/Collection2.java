@@ -36,8 +36,6 @@ public class Collection2 {
 			l1.add(temp);
 			temp = sc.nextLine();
 		} while (!temp.equals("Quit"));
-		System.out.println(l1 + "" + l1.size());
-		System.out.println("Ans" + l1.indexOf("Test"));
-		return l1;
+				return l1;
 	}
 }
