@@ -20,8 +20,6 @@ public class Collection1 {
 		sc.close();
 	}
 
-	// Method to accept input from user and calculate positive ,negative no and
-	// their sum
 	LinkedList<Integer> findsum(Scanner sc) {
 		int possum = 0;
 		int negsum = 0;

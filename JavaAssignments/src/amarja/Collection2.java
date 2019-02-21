@@ -30,12 +30,12 @@ public class Collection2 {
 
 	LinkedList<String> userinput(Scanner sc) {
 		LinkedList<String> l1 = new LinkedList<String>();
-		System.out.println("Please write 'Quit' to END");
+		System.out.println("Enter values for String : Please write 'Quit' to END");
 		String temp = sc.nextLine();
 		do {
 			l1.add(temp);
 			temp = sc.nextLine();
 		} while (!temp.equals("Quit"));
-				return l1;
+		return l1;
 	}
 }
