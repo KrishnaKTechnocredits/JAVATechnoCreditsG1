@@ -2,7 +2,7 @@ package ankush;
 
 public class DuplicateNumber {
 
-	void FindDuplicateNumber()
+	void findDuplicateNumber()
 	{
 		int temp;
 		DynamicInputArray dynamicArray=new DynamicInputArray();
@@ -32,7 +32,7 @@ public class DuplicateNumber {
 	
 	public static void main(String[] args) {
 		DuplicateNumber ia=new DuplicateNumber();
-		ia.FindDuplicateNumber();
+		ia.findDuplicateNumber();
 		
 	}		
 }
